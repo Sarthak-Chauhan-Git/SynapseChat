@@ -1,0 +1,157 @@
+.teamspace{
+    right: 0;
+    height: 100%;
+    width: 18vw;
+    background-color: #1f1e1c;
+}
+
+.teamspace-head{
+    height: 4rem;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.teamspace-head button{
+    position: absolute;
+    margin-left: 0;
+}
+
+.teamspace-head i{
+    margin-right: 1rem;
+}
+
+.teamspace-head-info{
+    margin: auto;
+}
+
+.teamspace-menu{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.teamspace-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: rgb(250, 245, 235);
+    color: black;
+    padding: auto;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.teamspace-option:hover{
+    background-color: rgb(164, 249, 249);
+}
+
+.teamspace-subhead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-top: 1px solid grey;
+}
+
+.online{
+    display: flex;
+    flex-direction: column;
+}
+
+.online-user-info{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.online-user-info:hover{
+    background-color: #151514;
+}
+
+.online-user-info .profilePic{
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+}
+
+.online-icon{
+    position: relative;
+    z-index: 1;
+    color: green;
+    font-size: 8px;
+    top: -11px;
+    left: -12px;
+}
+
+.team .teamspace-member{
+    margin-left: 1rem;
+}
+
+.scrollable {
+    max-height: 41vh;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgb(250, 245, 235) transparent;
+}
+
+.online-scroll{
+    max-height: 18vh;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: rgb(250, 245, 235);
+  border-radius: 4px;
+}
+
+.role{
+    margin-left: 1rem;
+    color: gold;
+}
+
+.collapsed{
+    display: none;
+}
+
+.expand{
+    height: 100%;
+    background-color: #1f1e1c;
+    width: 4vw;
+}
+
+.expand-btn{
+    padding: 1rem;
+    background-color: #1f1e1c;
+    width: 100%;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.expand-btn:hover{
+    background-color: #302f2d;
+}
+
+.collapsed-online-scroll{
+    max-height: 80vh;
+}

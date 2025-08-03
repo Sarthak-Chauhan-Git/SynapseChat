@@ -1,0 +1,23 @@
+.ai-chat{
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker{
+    color: grey;
+    font-size: 1rem;
+}
+
+.ai-response{
+    margin-right: 20%;
+    margin-bottom: 2rem;
+}
+
+.user-response{
+    align-self: flex-end;
+    margin-left: 20%;
+}
+
+.text-14{
+    font-size: 14px;
+}

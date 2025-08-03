@@ -1,0 +1,17 @@
+#main-container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.btn{
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.btn:hover{
+    background-color: #292825;
+    border-radius: 25px;
+}

@@ -1,0 +1,53 @@
+.convobox{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.convobox .head{
+    margin-bottom: 2rem;
+}
+
+.ai-chatBox{
+    height: 75%;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0rem 3rem;
+}
+
+.ai-prompt-input{
+    display: grid;
+    grid-template-columns: auto 3rem;
+    position: fixed;
+    bottom: 2.5rem;
+    background-color: #383837;
+    width: 40%;
+    height: fit-content;
+    align-self: center;
+    border-radius: 25px;
+    padding: 0.75rem;
+}
+
+.ai-prompt-input form{
+    display: flex;
+}
+.ai-prompt-input input{
+    width: 100%;
+    height: 100%;
+    padding: 0.25rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.ai-prompt-input button{
+    width: 3rem;
+    padding: 1rem 0rem;
+}
+.prompt-btn{
+    width: 3rem;
+}

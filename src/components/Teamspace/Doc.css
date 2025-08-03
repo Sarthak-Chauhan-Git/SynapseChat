@@ -1,0 +1,53 @@
+.doc{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+.doc::-webkit-scrollbar {
+    height: 8px;
+}
+
+.doc::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.doc::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.doc-metaData{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 25px;
+    margin: 0rem 0.75rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    max-width: 15rem;
+    max-height: 13rem;
+}
+.doc-metaData .doc-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 4rem;
+}
+.doc-metaData .doc-description{
+    font-size: 12px;
+    opacity: 0.8;
+}
+.doc-metaData .doc-createdBy{
+    margin-top: 1rem;
+}
+.doc-metaData .doc-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    border-top: 1px solid rgb(87, 84, 84);
+    opacity: 0.6;
+}

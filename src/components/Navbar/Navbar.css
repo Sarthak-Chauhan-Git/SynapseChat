@@ -1,0 +1,189 @@
+/* === NAVBAR BASE STYLES === */
+#navbar {
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #1f1e1c;
+  display: grid;
+  grid-template-rows: 8rem auto 7rem;
+  width: 13vw;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+
+/* === COLLAPSED STATE === */
+#navbar.collapsed {
+  width: 5rem;
+}
+
+/* === LOGO SECTION === */
+.logo {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid whitesmoke;
+  padding: 1rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.logo:hover{
+    background-color: #292825;
+}
+#navbar img {
+  width: 4rem;
+  object-fit: cover;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* === NAV LINKS === */
+ul {
+  margin-top: 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+ul .links-li {
+  margin: 0 1rem;
+  padding: 1rem;
+  list-style: none;
+  font-size: 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+ul li:hover {
+  background-color: #151514;
+}
+
+ul li i {
+  margin-right: 1rem;
+}
+
+/* === COLLAPSED LINK ADJUSTMENTS === */
+#navbar.collapsed ul li {
+  justify-self: center;
+  align-self: center;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+#navbar.collapsed ul li i {
+  margin: 0;
+}
+#navbar.collapsed .logo {
+  padding: 0;
+}
+
+/* === USER SECTION === */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 1rem;
+  width: 100%;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.login:hover {
+  opacity: 1;
+  background-color: #292825;
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+}
+.user-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-right: 1rem;
+}
+
+/* Hide username when collapsed */
+#navbar.collapsed .user-name {
+  display: none;
+}
+
+/* === PROFILE PICTURE === */
+.profilePic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: lightblue;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
+}
+
+/* === SIDEBAR TOGGLE BUTTON === */
+.sidebar-toggle {
+  margin-left: auto;
+  padding: 1rem;
+  background-color: transparent;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+#navbar.collapsed .sidebar-toggle{
+    height: 100%;
+    width: 100%;
+    padding: auto;
+}
+.sidebar-toggle i {
+  transition: transform 0.3s ease;
+}
+#navbar.collapsed .sidebar-toggle i {
+  transform: rotate(180deg);
+}
+
+/* === RESPONSIVE FIXES (OPTIONAL) === */
+@media (max-width: 768px) {
+  #navbar {
+    width: 100vw;
+    height: auto;
+    grid-template-rows: auto auto auto;
+    position: relative;
+  }
+
+  #navbar.collapsed {
+    width: 100vw;
+  }
+
+  ul {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  ul li {
+    font-size: 16px;
+    margin: 0.5rem;
+  }
+
+  .sidebar-toggle {
+    display: none;
+  }
+}
